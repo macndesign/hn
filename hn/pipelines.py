@@ -11,10 +11,10 @@ class HnPipeline(object):
     def __init__(self):
         engine = db_connect()
         create_hn_table(engine)
-        self.Session = sessionmaker(bind=engine)
+        self.session = sessionmaker(bind=engine)
 
     def process_item(self, item, spider):
-        session = self.Session()
+        session = self.session()
         hn = Hn(**item)
         session.add(hn)
         session.commit()

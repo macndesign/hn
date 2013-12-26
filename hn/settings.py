@@ -18,5 +18,5 @@ DATABASE = {'drivername': 'sqlite',
 #USER_AGENT = 'hn (+http://www.yourdomain.com)'
 
 ITEM_PIPELINES = {
-    'hn.pipelines.HnPipeline':300
+    'hn.pipelines.HnPipeline': 300
 }
