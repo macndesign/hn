@@ -12,7 +12,7 @@ SPIDER_MODULES = ['hn.spiders']
 NEWSPIDER_MODULE = 'hn.spiders'
 
 DATABASE = {'drivername': 'sqlite',
-            'database': 'dev.db'}
+            'database': 'db.sqlite3'}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'hn (+http://www.yourdomain.com)'
